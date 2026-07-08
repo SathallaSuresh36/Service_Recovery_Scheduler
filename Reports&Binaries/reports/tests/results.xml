@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites tests="33" failures="0" disabled="0" errors="0" time="0.004" timestamp="2026-07-08T10:41:06" name="AllTests">
+  <testsuite name="LoggerTest" tests="3" failures="0" disabled="0" errors="0" time="0.001" timestamp="2026-07-08T10:41:06">
+    <testcase name="LevelNamesCoverEveryValueAndUnknown" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="LoggerTest" />
+    <testcase name="FormatsLevelMessageAndTimestamp" status="run" result="completed" time="0.001" timestamp="2026-07-08T10:41:06" classname="LoggerTest" />
+    <testcase name="EachSeverityHelperEmitsItsLevel" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="LoggerTest" />
+  </testsuite>
+  <testsuite name="FactoryTest" tests="8" failures="0" disabled="0" errors="0" time="0" timestamp="2026-07-08T10:41:06">
+    <testcase name="CreatesEveryKind" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="FactoryTest" />
+    <testcase name="NotifyUsesDefaultTargetWhenUnspecified" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="FactoryTest" />
+    <testcase name="NotifyHonoursACustomTarget" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="FactoryTest" />
+    <testcase name="TargetIsIgnoredForNonNotifyActions" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="FactoryTest" />
+    <testcase name="CreateRejectsUnknownType" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="FactoryTest" />
+    <testcase name="ParseIsCaseInsensitive" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="FactoryTest" />
+    <testcase name="ParseRejectsUnknownNames" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="FactoryTest" />
+    <testcase name="ToStringCoversEveryTypeAndUnknown" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="FactoryTest" />
+  </testsuite>
+  <testsuite name="SchedulerTest" tests="7" failures="0" disabled="0" errors="0" time="0.001" timestamp="2026-07-08T10:41:06">
+    <testcase name="RegisteringMakesAServiceQueryable" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="SchedulerTest" />
+    <testcase name="DuplicateRegistrationIsRejected" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="SchedulerTest" />
+    <testcase name="ReportingFailuresDispatchesAndEscalates" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="SchedulerTest" />
+    <testcase name="UnknownServiceThrows" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="SchedulerTest" />
+    <testcase name="ObserverIsInvokedWithStateAndResult" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="SchedulerTest" />
+    <testcase name="MarkRecoveredResetsEscalation" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="SchedulerTest" />
+    <testcase name="SnapshotReturnsStateForEveryService" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="SchedulerTest" />
+  </testsuite>
+  <testsuite name="SchedulerGMockTest" tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2026-07-08T10:41:06">
+    <testcase name="ServiceDispatchesToTheSelectedAction" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="SchedulerGMockTest" />
+  </testsuite>
+  <testsuite name="ServiceTest" tests="7" failures="0" disabled="0" errors="0" time="0.001" timestamp="2026-07-08T10:41:06">
+    <testcase name="FreshServiceHasNoFailures" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="ServiceTest" />
+    <testcase name="ConsecutiveFailuresEscalate" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="ServiceTest" />
+    <testcase name="EscalationClampsAtTheFinalAction" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="ServiceTest" />
+    <testcase name="ResetReturnsEscalationToTheStart" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="ServiceTest" />
+    <testcase name="SingleActionServiceAlwaysRunsThatAction" status="run" result="completed" time="0.001" timestamp="2026-07-08T10:41:06" classname="ServiceTest" />
+    <testcase name="NextActionAdvancesWithEscalationAndClamps" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="ServiceTest" />
+    <testcase name="InvalidConstructionIsRejected" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="ServiceTest" />
+  </testsuite>
+  <testsuite name="ActionsTest" tests="7" failures="0" disabled="0" errors="0" time="0" timestamp="2026-07-08T10:41:06">
+    <testcase name="ReportTheirKindAndName" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="ActionsTest" />
+    <testcase name="ExecuteProducesADescribedResult" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="ActionsTest" />
+    <testcase name="NotifyCarriesAConfigurableTarget" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="ActionsTest" />
+    <testcase name="MakeActionBuildsBehindTheInterface" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="ActionsTest" />
+    <testcase name="ToStringCoversEveryKind" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="ActionsTest" />
+    <testcase name="ToStringHandlesUnknownKind" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="ActionsTest" />
+    <testcase name="StreamInsertionWritesTheName" status="run" result="completed" time="0" timestamp="2026-07-08T10:41:06" classname="ActionsTest" />
+  </testsuite>
+</testsuites>
